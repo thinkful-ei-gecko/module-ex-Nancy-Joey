@@ -34,8 +34,8 @@ const shoppingList = (function(){
     return items.join('');
   }
   
-  
-  function render() {
+  //renders EVERYTHING onto the page
+  function render() { 
     // Filter item list if store prop is true by item.checked === false
     let items = [ ...store.items ];
     if (store.hideCheckedItems) {
