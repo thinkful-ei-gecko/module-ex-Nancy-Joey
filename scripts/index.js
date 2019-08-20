@@ -18,6 +18,8 @@ function renderShoppingList() {
   // this function will be responsible for rendering the shopping list in
   // the DOM
   console.log('`renderShoppingList` ran');
+  const shoppingListItemsString = `<li>${store.items[0].name} </li>`;
+  $('.js-shopping-list').html(shoppingListItemsString);
 }
 
 
